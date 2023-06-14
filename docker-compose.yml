@@ -44,14 +44,14 @@ services:
 #      - web
 #    volumes:
 #      - ./static:/home/app/code/static
-  hp:
-    build: ./haproxy
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./haproxy:/usr/local/etc/haproxy
-    depends_on:
-      - web
+#  hp:
+#    build: ./haproxy
+#    ports:
+#      - "3000:3000"
+#    volumes:
+#      - ./haproxy:/usr/local/etc/haproxy
+#    depends_on:
+#      - web
 
 
 volumes:
